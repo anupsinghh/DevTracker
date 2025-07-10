@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FixMate Project Tracker</title>
+  <style>
+    :root {
+      --primary-color: #4a90e2;
+      --bg-light: #f9f9fb;
+      --text-color: #333;
+      --box-bg: #ffffff;
+      --box-shadow: rgba(0, 0, 0, 0.05) 0 2px 8px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: var(--bg-light);
+      color: var(--text-color);
+      padding: 1rem;
+    }
+
+    h1, h2, h3 {
+      color: var(--primary-color);
+      margin-bottom: 0.5rem;
+    }
+
+    .section {
+      margin-bottom: 2rem;
+    }
+
+    .box {
+      background: var(--box-bg);
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: var(--box-shadow);
+      transition: all 0.3s ease;
+    }
+
+    .box:hover {
+      transform: translateY(-2px);
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    label {
+      display: block;
+      margin: 0.5rem 0;
+      font-size: 0.95rem;
+    }
+
+    input[type="checkbox"] {
+      margin-right: 0.5rem;
+      transform: scale(1.2);
+    }
+
+    details summary {
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1rem;
+      margin: 1rem 0 0.5rem;
+      color: var(--primary-color);
+    }
+
+    @media (max-width: 600px) {
+      body {
+        padding: 0.8rem;
+      }
+
+      .box {
+        padding: 1rem;
+      }
+
+      label {
+        font-size: 0.9rem;
+      }
+    }
+  </style>
+</head>
+<body>
+   <h1>FixMate: Project Features & Development Flow</h1>
+  <div class="section box">
+    <p><strong>Project Title:</strong> Hostel Complaint Management System – FixMate</p>
+    <p><strong>Team Members:</strong> [List all names and roll numbers]</p>
+    <p><strong>Mentor:</strong> [Faculty Name]</p>
+  </div>
+
+  <div class="section box">
+    <h2>🔧 Core Features (Functional)</h2>
+    <h3>🧑‍🎓 Student Module</h3>
+    <p>Login/Logout using student details</p>
+    <p>Submit complaint with category, room number, description</p>
+    <p>Auto-generated Ticket Number</p>
+    <p>View past complaints and their statuses</p>
+
+    <h3>🧰 Technician Module</h3>
+    <p>Login/Logout</p>
+    <p>View assigned complaints</p>
+    <p>Update complaint status</p>
+
+    <h3>🧑‍💼 Admin Module</h3>
+    <p>Login/Logout (secured credentials)</p>
+    <p>View all complaints</p>
+    <p>Assign complaints to technicians</p>
+    <p>Manage users (Add/remove)</p>
+  </div>
+
+  <div class="section box">
+    <h2>🌐 Common Features</h2>
+    <p>Responsive, modern UI with collapsible navbar</p>
+    <p>Toast notifications</p>
+    <p>Role-based redirection after login</p>
+    <p>Auto session management with localStorage</p>
+    <p>Homepage 'Get Started' button with role check</p>
+  </div>
+
+  <div class="section box">
+    <h2>🛠️ Tech Stack</h2>
+    <ul>
+      <li><strong>Frontend:</strong> React, CSS, Vite</li>
+      <li><strong>Backend:</strong> Node.js, Express.js</li>
+      <li><strong>Database:</strong> MongoDB (with Compass)</li>
+      <li><strong>Deployment:</strong> Vercel (Frontend), Render (Backend)</li>
+    </ul>
+  </div>
+
+  <div class="section box">
+    <h2>🛠️ Tech Stack</h2>
+    <ul>
+      <li><strong>Frontend:</strong> React, CSS, Vite</li>
+      <li><strong>Backend:</strong> Node.js, Express.js</li>
+      <li><strong>Database:</strong> MongoDB (with Compass)</li>
+      <li><strong>Deployment:</strong> Vercel (Frontend), Render (Backend)</li>
+    </ul>
+  </div>
+
+  <div class="section box">
+    <h2>🔁 Development Flow</h2>
+
+    <details>
+      <summary>Requirement Finalization</summary>
+      <label><input type="checkbox" /> Feature discussion and finalization</label>
+      <label><input type="checkbox" /> Wireframing basic UI structure</label>
+    </details>
+
+    <details>
+      <summary>Backend Setup</summary>
+      <label><input type="checkbox" /> MongoDB schema setup</label>
+      <label><input type="checkbox" /> Complaint & User routes</label>
+    </details>
+
+    <details>
+      <summary>Student Flow</summary>
+      <label><input type="checkbox" /> Complaint form</label>
+      <label><input type="checkbox" /> Ticket generation</label>
+      <label><input type="checkbox" /> View complaints</label>
+    </details>
+
+    <details>
+      <summary>Technician Flow</summary>
+      <label><input type="checkbox" /> View assigned complaints</label>
+      <label><input type="checkbox" /> Status update functionality</label>
+    </details>
+
+    <details>
+      <summary>Admin Flow</summary>
+      <label><input type="checkbox" /> View all complaints</label>
+      <label><input type="checkbox" /> Assign complaints</label>
+      <label><input type="checkbox" /> Add/remove users</label>
+    </details>
+
+    <details>
+      <summary>Unified Login + Route Protection</summary>
+      <label><input type="checkbox" /> Merge login for all roles</label>
+      <label><input type="checkbox" /> Role-based dashboard navigation</label>
+      <label><input type="checkbox" /> Protected routes</label>
+    </details>
+
+    <details>
+      <summary>Final UI & Deployment</summary>
+      <label><input type="checkbox" /> Final UI polish</label>
+      <label><input type="checkbox" /> Responsive testing</label>
+      <label><input type="checkbox" /> Vercel + Render Deployment</label>
+    </details>
+
+    <details>
+      <summary>Documentation & Review</summary>
+      <label><input type="checkbox" /> Prepare documentation</label>
+      <label><input type="checkbox" /> Demo flow</label>
+      <label><input type="checkbox" /> Faculty review and final feedback</label>
+    </details>
+  </div>
+</body>
+</html>
